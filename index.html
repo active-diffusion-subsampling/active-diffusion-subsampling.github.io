@@ -44,6 +44,19 @@
 </head>
 
 
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Active Diffusion Subsampling </h1>
+
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
 
 <body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
 <section class="hero is-light is-small">
@@ -52,7 +65,7 @@
       <h2 class="title is-4">Abstract</h2>
       <div class="content has-text-justified">
       <p>
-        Test active diffusion
+        Abstract Subsampling is commonly used to mitigate costs associated with data acquisition, such as time or energy requirements, motivating algorithms for estimating the fully-sampled signal of interest <b>x</b> from partially observed measurements <b>y</b>. In maximum-entropy sampling, one selects measurement locations that are expected to have the highest entropy, so as to minimise uncertainty about <b>x</b>. This approach relies on an accurate model of the posterior distribution over future measurements, given the measurements observed so far. Recently, diffusion models have been shown to produce high quality posterior samples of high-dimensional signals using guided diffusion algorithms. In this work, we propose Active Diffusion Subsampling (ADS), a method for performing active subsampling using guided diffusion in which the model tracks a distribution of beliefs over the true state of <b>x</b> throughout the diffusion process, progressively decreasing its uncertainty by choosing to acquire measurements with maximum expected entropy, and ultimately generating the posterior distribution <b>p(x | y)</b>. ADS can be applied using pre-trained diffusion models for any subsampling rate, and does not require task-specific retraining - just the specification of a measurement model. Furthermore, the maximum entropy sampling policy employed by ADS is interpretable given a set of posterior samples, enhancing trustworthiness relative to existing methods using black-box policies. Experimentally, we show that ADS outperforms non-adaptive sampling strategies, and study an application of ADS in Magnetic Resonance Imaging acceleration using the fastMRI dataset, finding that ADS performs competitively with supervised methods.
       </p>
     </div>
     </div>
@@ -60,7 +73,24 @@
 
 </section>
 
+<section>
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-4">An overview of ADS</h2>
+      <figure>
+        <img src="images/ads-high-level.png" alt="ADS High Level Overview">
+        <figcaption>Overview of the proposed Active Diffusion Sampling (ADS) method. Samples from
+          the posterior distribution are simultaneously generated (<i>diffuse</i>) and selected (<i>choose</i>) to maximize
+          information gain</figcaption>
+      </figure>
+    </div>
+  </div>
 
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-4">Code to be added...</h2>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="columns is-centered">
