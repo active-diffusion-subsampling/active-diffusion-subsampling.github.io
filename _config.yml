@@ -1,1 +1,4 @@
 theme: minima
+github: [metadata]
+repository: active-diffusion-subsampling/active-diffusion-subsampling.github.io
+baseurl: "/active-diffusion-subsampling.github.io"
