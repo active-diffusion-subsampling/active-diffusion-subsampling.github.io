@@ -101,13 +101,71 @@
   </style>
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-4">FastMRI results to be added...</h2>
-      <p>...</p>
+      <h2 class="title is-4">Examples ADS on FastMRI</h2>
+      <figure>
+        <img src="./image_assets/ads_fastmri1.gif" alt="FastMRI" style="width: 900px; margin-bottom: -50px;">
+        <img src="./image_assets/fastmri1.png" alt="FastMRI" style="width: 800px;">
+        <figcaption style="margin-top: -10px;"><b>ADS on a FastMRI image</b></figcaption>
+      </figure>
+      <br>
+      <figure>
+        <img src="./image_assets/ads_fastmri2.gif" alt="FastMRI" style="width: 900px; margin-bottom: -50px;">
+        <img src="./image_assets/fastmri2.png" alt="FastMRI" style="width: 800px;">
+        <figcaption style="margin-top: -10px;"><b>ADS on a FastMRI image</b></figcaption>
   </div>
 
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-4">Examples Stable Diffusion</h2>
+      <h2 class="title is-4">Results ADS on FastMRI (24 May 2024)</h2>
+      <p>SSIM scores for fastMRI knee test set with 4x acceleration. ADS outperforms random and equispaced sampling strategies, and (out)performs competitively with supervised methods.</p>
+      <br>
+      <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+          <th>Unsupervised</th>
+          <th>Method</th>
+          <th>SSIM (↑)</th>
+        </tr>
+        <tr>
+          <td>✓</td>
+          <td>Random DPS</td>
+          <td>71.08</td>
+        </tr>
+        <tr>
+          <td>✗</td>
+          <td>Random UNet (Yin et al., 2021)</td>
+          <td>85.95</td>
+        </tr>
+        <tr>
+          <td>✗</td>
+          <td>Equispaced UNet (Yin et al., 2021)</td>
+          <td>86.86</td>
+        </tr>
+        <tr>
+          <td>✗</td>
+          <td>PG-MRI (Bakker et al., 2020)</td>
+          <td>87.97</td>
+        </tr>
+        <tr>
+          <td>✓</td>
+          <td>ADS (Ours)</td>
+          <td>88.24</td>
+        </tr>
+        <tr>
+          <td>✗</td>
+          <td>LOUPE (Bahadir et al., 2020)</td>
+          <td>89.52</td>
+        </tr>
+        <tr>
+          <td>✗</td>
+          <td>SeqMRI (Yin et al., 2021)</td>
+          <td>91.08</td>
+        </tr>
+      </table>
+  </div>
+
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-4">Examples ADS with Stable Diffusion</h2>
 
       <figure>
         <img src="./image_assets/ads_celeba.gif" alt="ADS CelebA" style="width: 900px; margin-bottom: -50px;">
