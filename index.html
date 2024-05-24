@@ -97,26 +97,24 @@
     </div>
   </div>
 
-  <style>
-    .trimmed-image {
-      width: auto; /* Adjust as necessary */
-      height: 20%; /* Show only 90% of the image height */
-      overflow: hidden; /* Hide the overflow */
-    }
-  </style>
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-4">Examples ADS on FastMRI</h2>
+      <div class="block" style="border: 5px solid rgba(0, 0, 0, 0.5); border-radius: 10px; padding: 10px;">
       <figure>
-        <img src="./image_assets/ads_fastmri1.gif" alt="FastMRI" style="width: 900px; margin-bottom: -50px;">
-        <img src="./image_assets/fastmri1.png" alt="FastMRI" style="width: 800px;">
+        <img src="./image_assets/ads_fastmri1.gif" alt="FastMRI" style="width: 900px; margin-bottom: -20px; object-fit: cover; height: 250px">
+        <img src="./image_assets/fastmri1.png" alt="FastMRI" style="width: 850px;">
         <figcaption style="margin-top: -10px;"><b>ADS on a FastMRI image</b></figcaption>
       </figure>
+      </div>
       <br>
+      <div class="block" style="border: 5px solid rgba(0, 0, 0, 0.5); border-radius: 10px; padding: 10px;">
       <figure>
-        <img src="./image_assets/ads_fastmri2.gif" alt="FastMRI" style="width: 900px; margin-bottom: -50px;">
-        <img src="./image_assets/fastmri2.png" alt="FastMRI" style="width: 800px;">
+        <img src="./image_assets/ads_fastmri2.gif" alt="FastMRI" style="width: 900px; margin-bottom: -20px; object-fit: cover; height: 250px">
+        <img src="./image_assets/fastmri2.png" alt="FastMRI" style="width: 850px;">
         <figcaption style="margin-top: -10px;"><b>ADS on a FastMRI image</b></figcaption>
+      </figure>
+      </div>
   </div>
 
   <div class="hero-body">
@@ -131,37 +129,37 @@
           <th>SSIM (↑)</th>
         </tr>
         <tr>
-          <td>✓</td>
+          <td><span style="color: green;">✓</span></td>
           <td>Random DPS</td>
           <td>71.08</td>
         </tr>
         <tr>
-          <td>✗</td>
+          <td><span style="color: red;">✗</span></td>
           <td>Random UNet (Yin et al., 2021)</td>
           <td>85.95</td>
         </tr>
         <tr>
-          <td>✗</td>
+          <td><span style="color: red;">✗</span></td>
           <td>Equispaced UNet (Yin et al., 2021)</td>
           <td>86.86</td>
         </tr>
         <tr>
-          <td>✗</td>
+          <td><span style="color: red;">✗</span></td>
           <td>PG-MRI (Bakker et al., 2020)</td>
           <td>87.97</td>
         </tr>
         <tr>
-          <td>✓</td>
+          <td><span style="color: green;">✓</span></td>
           <td>ADS (Ours)</td>
           <td>88.24</td>
         </tr>
         <tr>
-          <td>✗</td>
+          <td><span style="color: red;">✗</span></td>
           <td>LOUPE (Bahadir et al., 2020)</td>
           <td>89.52</td>
         </tr>
         <tr>
-          <td>✗</td>
+          <td><span style="color: red;">✗</span></td>
           <td>SeqMRI (Yin et al., 2021)</td>
           <td>91.08</td>
         </tr>
@@ -171,24 +169,31 @@
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-4">Examples ADS with Stable Diffusion</h2>
-
-      <figure>
-        <img src="./image_assets/ads_celeba.gif" alt="ADS CelebA" style="width: 900px; margin-bottom: -50px;">
-        <img src="./image_assets/celeba.png" alt="CelebA" style="width: 800px;">
-        <figcaption style="margin-top: -10px;"><b>ADS on CelebA image</b></figcaption>
+      <div class="block" style="border: 5px solid rgba(200, 124, 9, 0.5); border-radius: 10px; padding: 10px;">
+        <figure>
+          <img src="./image_assets/ads_celeba.gif" alt="ADS CelebA" style="width: 900px; margin-bottom: -20px; object-fit: cover; height: 250px">
+          <img src="./image_assets/celeba.png" alt="CelebA" style="width: 850px;">
+          <figcaption style="margin-top: -10px;"><b>ADS on CelebA image</b></figcaption>
+        </figure>
+      </div>
+      <br>
+      <div class="block" style="border: 5px solid rgba(200, 124, 9, 0.5); border-radius: 10px; padding: 10px;">
+        <figure>
+          <img src="./image_assets/ads_imagenet1.gif" alt="ADS Imagenet" style="width: 900px; margin-bottom: -20px; object-fit: cover; height: 250px">
+          <img src="./image_assets/imagenet1.png" alt="Imagenet" style="width: 850px;">
+          <figcaption style="margin-top: -10px;"><b>ADS on Imagenet image</b></figcaption>
+        </figure>
+      </div>
       </figure>
       <br>
+      <div class = "block" style="border: 5px solid rgba(200, 124, 9, 0.5); border-radius: 10px; padding: 10px;">
       <figure>
-        <img src="./image_assets/ads_imagenet1.gif" alt="ADS Imagenet" style="width: 900px; margin-bottom: -50px;">
-        <img src="./image_assets/imagenet1.png" alt="Imagenet" style="width: 800px;">
-        <figcaption style="margin-top: -10px;"><b>ADS on Imagenet image</b></figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src="./image_assets/ads_black_hole.gif" alt="ADS black hole" style="width: 900px; margin-bottom: -50px;">
-        <img src="./image_assets/black_hole.png" alt="Black hole" style="width: 800px;">
+        <img src="./image_assets/ads_black_hole.gif" alt="ADS black hole" style="width: 900px; margin-bottom: -20px; object-fit: cover; height: 250px">
+        <img src="./image_assets/black_hole.png" alt="Black hole" style="width: 850px;">
         <figcaption style="margin-top: -10px;"><b>ADS on the black hole image</b></figcaption>
       </figure>
+      </div>
+    </div>
     </div>
   </div>
 
@@ -210,17 +215,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="./assets/js/choose_buttons.js"></script>
-  <script src="./assets/js/slider.js"></script>
-  <script src="./assets/js/juxtapose.js"></script>
-  <script src="./assets/js/popper.min.js"></script>
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
-  <script src="./assets/js/bulma-carousel.min.js"></script>
-  <script src="./assets/js/bulma-slider.min.js"></script>
-  <script src="./assets/js/magnifier.js"></script> -->
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
